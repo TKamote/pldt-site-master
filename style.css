@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.businesses-header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 35px;
+}
+.fixed-header {
+    display: flex;
+}
+/* a.smart-logo img {
+    color: #fff;
+} */
+.fixed-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 12px 50px 12px 50px;
+   
+}
+.wrapper-header-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.big-logo {
+    width: 150px;
+    padding-right: 20px;
+}
+.big-logo img {
+    width: 100%;
+}
+.navigation-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: .87rem;
+}
+.navigation-left a {
+    padding: 10px;
+}
+.wrapper-header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+}
+.wrapper-header-right a {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    height: 100%;
+    font-size: .75rem;
+}
+.wrapper-header-right a img {
+    height: 100%;
+    padding-right: 10px;
+}
+.covid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 240, 240);
+    font-size: 1.2rem;
+}
+.covid a {
+    padding: 0 5px;
+    color: red;
+}
+section-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #fff;
+}
+.section-1-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 140px;
+}
+.section-1-title h2 {
+    width: 100%;
+}
+section-1 h2 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: red;
+    text-align: center;
+    line-height: 3.5rem;
+}
+.section-1-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.section-1-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+h2.fiber {
+    color: black;
+}
+.fas {
+    padding: 17px 4px;
+    color: red;
+}
+.section-1-left p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 1.3px;
+    text-align: center;
+}
+.section-1-btn {
+    padding-top: 30px;
+
+}
+.btn {
+    padding: 12px 25px;
+    border: red 2px solid;
+    border-radius: 25px;
+    font-size: .9rem;
+    font-weight: 300;
+    
+}
+.all-plans {
+    background-color: red;
+    color: #fff;
+}
+.upgrade-plan {
+    background-color: transparent;
+    color: red;
+}
+
+.section-1-right {
+    background-image: url(images/fibr-tv.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 53%;
+    min-height: 500px;
+}
