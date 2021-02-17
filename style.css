@@ -109,15 +109,16 @@ section-1 {
     width: 100%;
     height: 140px;
 }
-.section-1-title h2 {
+h2 {
     width: 100%;
-}
-section-1 h2 {
     font-size: 2.3rem;
     letter-spacing: 2px;
     font-weight: 400;
     color: red;
     text-align: center;
+    line-height: 3.5rem;
+}
+section-1 h2 {
     line-height: 3.5rem;
 }
 .section-1-main {
@@ -143,7 +144,9 @@ h2.fiber {
     padding: 17px 4px;
     color: red;
 }
-.section-1-left p {
+.section-1-left,
+.section-2-right,
+.section-4-main p {
     font-size: 1.2rem;
     line-height: 2rem;
     letter-spacing: 1.3px;
@@ -151,15 +154,14 @@ h2.fiber {
 }
 .section-1-btn {
     padding-top: 30px;
-
 }
-.btn {
+.btn, .btn1 {
     padding: 12px 25px;
     border: red 2px solid;
     border-radius: 25px;
     font-size: .9rem;
-    font-weight: 300;
-    
+    font-weight: 300; 
+    margin: 3px;  
 }
 .all-plans {
     background-color: red;
@@ -169,7 +171,6 @@ h2.fiber {
     background-color: transparent;
     color: red;
 }
-
 .section-1-right {
     background-image: url(images/fibr-tv.jpg);
     background-position: center center;
@@ -178,3 +179,123 @@ h2.fiber {
     width: 53%;
     min-height: 500px;
 }
+section-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.section-2-left {
+    background-image: url(images/img-unli-vday.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 55%;
+    min-height: 500px;
+}
+.section-2-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    padding-right: 20px;
+    padding-left: 40px;
+}
+.section-2-right h2 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: red;
+    text-align: center;
+    line-height: 3.5rem;
+}
+.section-2-btn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.section-2-btn-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.section-2-btn-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-2-btn-down .recommend-plan {
+    background-color: black;
+    color: #fff;
+    border-color: black;
+}
+section-3 {
+    display: flex;
+    width: 100%;
+}
+.section-3-right {
+    background-image: url(images/img-home.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 53%;
+    min-height: 500px;
+}
+section-4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    margin: 0 auto;
+    background-image: url(images/valentines-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+.section-4-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+}
+.section-4-main h2 {
+    padding: 20px 0;
+}
+button.btn1.active {
+    background-color: red;
+    color:#fff;
+}
+button.btn1 {
+    background-color: transparent;
+}
+.bg-image {
+    width: 100%;
+    height: 500px;
+    background-image: url(images/nba-league-pass.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .nba-league {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+    justify-items: center;
+    justify-self: flex-start;
+    text-align: center;
+    width: 30%;
+    height: 450px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+
+} */
