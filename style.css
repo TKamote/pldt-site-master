@@ -146,7 +146,8 @@ h2.fiber {
 }
 .section-1-left,
 .section-2-right,
-.section-4-main p {
+.section-4-main,
+.nba_league_pass p {
     font-size: 1.2rem;
     line-height: 2rem;
     letter-spacing: 1.3px;
@@ -276,26 +277,179 @@ button.btn1.active {
 button.btn1 {
     background-color: transparent;
 }
-.bg-image {
+.nba-league {
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-image: url(images/nba-league-pass.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* .nba-league {
+.nba_league_pass {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
-    align-content: center;
+    justify-content: center;
     justify-items: center;
-    justify-self: flex-start;
     text-align: center;
-    width: 30%;
-    height: 450px;
+    max-width: 350px;
+    height: 610px;
     background-color: white;
-    margin-top: 10px;
-    margin-left: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transform: translate(15%, 5%);
+}
+.nba_league_pass img {
+    width: 100%;
+    padding-bottom: 30px;
+}
+button.nba-btn {
+    width: 150px;
+    background-color: red;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
 
-} */
+.bg-video-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: url(images/valentines-bg1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+}
+section-8 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.section-8-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding-top: 30px;
+}
+.btn8 {
+    padding: 12px 15px;
+    border: red 2px solid;
+    border-radius: 25px;
+    font-size: .9rem;
+    font-weight: 300; 
+    margin: 3px; 
+    width: 150px; 
+}
+.section-8-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section-8-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+.section-8-1a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    margin: 5px;
+}
+.section-8-1a img {
+    width: 100%;
+}
+.section-8-1a a {
+    width: 80%;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.section-8-1a a {
+    width: 80%;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+    font-size: .85rem;
+    letter-spacing: .4px;
+}
+.section-8-1a1  a{
+    width: 90%;
+}
+.section-9 {
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.section-9-title {
+    text-align: center;
+    background-color: rgb(178, 238, 173);
+}
+.section-9-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(178, 238, 173);
+
+}
+.section-9-main-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+.section-9-main-1 img {
+    width: 120px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.btn9 {
+    display: flex;
+    justify-content: center;
+    padding: 12px 15px;
+    border: red 2px solid;
+    border-radius: 25px;
+    font-size: .9rem;
+    font-weight: 300; 
+    margin: 0 auto;
+    width: 200px; 
+    color: #fff;
+    background-color: red;
+    text-align: center;
+    margin-top: 20px;
+}
