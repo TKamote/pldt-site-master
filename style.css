@@ -10,6 +10,9 @@ a {
 a:hover {
     cursor: pointer;
 }
+button:hover {
+    cursor: pointer;
+}
 body {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -121,6 +124,9 @@ h2 {
 section-1 h2 {
     line-height: 3.5rem;
 }
+.far {
+    font-size: 28px;
+}
 .section-1-main {
     display: flex;
     flex-direction: row;
@@ -147,7 +153,9 @@ h2.fiber {
 .section-1-left,
 .section-2-right,
 .section-4-main,
-.nba_league_pass p {
+.nba_league_pass,
+.section-9-main-1,
+.section-10-right p {
     font-size: 1.2rem;
     line-height: 2rem;
     letter-spacing: 1.3px;
@@ -180,7 +188,8 @@ h2.fiber {
     width: 53%;
     min-height: 500px;
 }
-section-2 {
+section-2,
+section-10 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -426,8 +435,8 @@ section-8 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-between;
+    align-content: space-between;
     width: 30%;
     padding: 30px;
     text-align: center;
@@ -438,6 +447,10 @@ section-8 {
     margin: 0 auto;
     padding-bottom: 20px;
 }
+.section-9-main-1 p .section-9-title {
+    font-weight: 400;
+    padding-bottom: 5px;
+}
 .btn9 {
     display: flex;
     justify-content: center;
@@ -447,9 +460,112 @@ section-8 {
     font-size: .9rem;
     font-weight: 300; 
     margin: 0 auto;
-    width: 200px; 
+    width: 250px; 
     color: #fff;
     background-color: red;
     text-align: center;
     margin-top: 20px;
+}
+.section-10-left {
+    background-image: url(images/app-demo-desktop.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    min-height: 500px;
+}
+.section-10-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 40px;
+}
+.section-10-right h2 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: rgb(20, 19, 19);
+    line-height: 3.5rem;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.section-10-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.section-10-btn a {
+    display: flex;
+    padding: 10px;
+}
+
+.section-11 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(49, 46, 46);
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+}
+.foot-a {
+    padding: 5px;
+    color: rgb(161, 148, 148); 
+    font-size: .75rem;
+    font-weight: 300;
+    letter-spacing: .4px;
+}
+.foot-a:hover {
+    color: red;
+}
+.social-media-pldt {
+    display: flex;
+    flex-wrap: unwrap;
+    justify-content: right;
+    color: rgb(227, 241, 241);
+}
+.pldt-copyright {
+    color: #fff;
+    font-size: .8rem;
+}
+.fab {
+    padding: 3px 5px;
+    font-size: 25px;
+    color: #fff;
+}
+.heart {
+    display: flex;
+    flex-direction: column;
+}
+
+.big-heart {
+    font-size: 70px;
+    position: relative;
+}
+.fa-wifi {
+    font-size: 25px;
+    color: rgb(246, 244, 250);
+    position: absolute;
+    top: 20px;
+    left: 19px;
+}
+.fa-share-square {
+    font-size: 25px;
+    color: rgb(246, 244, 250);
+    position: absolute;
+    top: 37px;
+    left: 27px;
+}
+.fa-calendar-alt {
+    font-size: 25px;
+    color: rgb(246, 244, 250);
+    position: absolute;
+    top: 37px;
+    left: 28px;
 }
