@@ -25,22 +25,23 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 35px;
+}
+.businesses-header a.pldt-logo {
+    background-color: #fff;
+}
+.businesses-header a.logos {
+    padding: 4px 15px;
 }
 .fixed-header {
     display: flex;
 }
-/* a.smart-logo img {
-    color: #fff;
-} */
 .fixed-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 12px 50px 12px 50px;
-   
+    padding: 12px 50px 12px 50px; 
 }
 .wrapper-header-left {
     display: flex;
@@ -113,6 +114,10 @@ body {
     width: 100%;
     height: 140px;
 }
+.section-1-title h2 i.fa-heart {
+    transform: rotateZ(25deg);
+    font-size: 1.45rem;
+}
 h2 {
     width: 100%;
     font-size: 2.3rem;
@@ -134,7 +139,8 @@ h2 {
     flex-wrap: wrap;
     width: 100%;
 }
-.section-1-left {
+.section-1-left,
+.section-3-left {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -153,6 +159,7 @@ h2.fiber {
 }
 .section-1-left,
 .section-2-right,
+.section-3-left,
 .section-4-main,
 .nba_league_pass,
 .section-9-main-1,
@@ -249,6 +256,10 @@ h2.fiber {
     display: flex;
     width: 100%;
 }
+.section-3-left {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 .section-3-right {
     background-image: url(images/img-home.jpg);
     background-position: center center;
@@ -256,6 +267,7 @@ h2.fiber {
     background-repeat: no-repeat;
     width: 53%;
     min-height: 500px;
+    box-shadow:  -10px -10px 24px rgb(250, 247, 246);
 }
 .section-4 {
     display: flex;
@@ -269,6 +281,7 @@ h2.fiber {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: rgb(250, 248, 248);
 }
 .section-4-main {
     display: flex;
@@ -277,15 +290,56 @@ h2.fiber {
     width: 100%;
     padding: 20px 0;
 }
+.section-4-main p {
+    width: 90%;
+    margin: 0 auto;
+}
+.section-4-main p.rediscover {
+   font-weight: 700;
+   padding-bottom: 15px;
+}
 .section-4-main h2 {
     padding: 20px 0;
 }
-button.btn1.active {
-    background-color: red;
-    color:#fff;
+.section-4-main h2 i.fa-heart {
+    transform: rotateZ(25deg);
+    font-size: 1.45rem;
 }
-button.btn1 {
-    background-color: transparent;
+.section-4-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 236, 231);
+    border-radius: 25px;
+    width: 550px;
+    height: 44px;
+}
+.btn4 {
+    padding: 12px 15px;
+    background-color:transparent;
+    border-radius: 25px;
+    font-size: .9rem;
+    font-weight: 300; 
+    margin: 3px; 
+    width: 180px; 
+    border: none;
+    outline: none;
+}
+.btn4 a {
+    color: rgb(16, 16, 17);
+}
+.btn4.active {
+    background-color: red;  
+}
+.btn4.active a {
+    color: #fff;
 }
 .nba-league {
     width: 100%;
@@ -350,23 +404,44 @@ button.nba-btn {
     align-items: center;
     width: 100%;
     min-height: 600px;
+    position: relative;
+}
+.section-8-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding-top: 20px; 
 }
 .section-8-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 120px;
-    padding-top: 30px;
+    background-color: rgb(245, 236, 231);
+    border-radius: 25px;
+    width: 620px;
+    height: 44px;
 }
 .btn8 {
     padding: 12px 15px;
-    border: red 2px solid;
+    background-color:transparent;
     border-radius: 25px;
     font-size: .9rem;
     font-weight: 300; 
     margin: 3px; 
     width: 150px; 
+    border: none;
+    outline: none;
+}
+.btn8 a {
+    color: rgb(16, 16, 17);
+}
+.btn8.active {
+    background-color: red;  
+}
+.btn8.active a {
+    color: #fff;
 }
 .section-8-1 {
     display: flex;
@@ -379,7 +454,6 @@ button.nba-btn {
     margin: 0 auto;
     padding-bottom: 30px;
 }
-
 .section-8-1a {
     display: flex;
     flex-direction: column;
@@ -417,10 +491,15 @@ button.nba-btn {
     padding: 50px 0;
     margin: 0 auto;
     width: 100%;
-    min-height: 600px;
+    min-height: 520px;
+    background-color: rgb(245, 236, 231);
 }
 .section-9-title {
     text-align: center;   
+}
+.section-9-title h2 i.fa-heart {
+    transform: rotateZ(25deg);
+    font-size: 1.45rem;
 }
 .section-9-main {
     display: flex;
@@ -493,6 +572,9 @@ button.nba-btn {
     width: 50%;
     padding-right: 20px;
     padding-left: 40px;
+    background-color: rgb(245, 238, 236);
+    border-radius: 0px;
+    box-shadow:  -10px -80px 24px rgb(245, 238, 236);
 }
 .section-10-right h2 {
     font-size: 2.3rem;
@@ -593,4 +675,73 @@ button.nba-btn {
     position: absolute;
     top: 37px;
     left: 28px;
+}
+.btn-heart {
+    display: none;
+}
+.btn-heart.active1 {
+    display: none;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    top: 21px;
+    right: 0px;
+    height: 62px;
+    background-color: red;
+    color: #fff;
+    font-size: .9rem;
+    width: 270px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding-right: 15px;
+}
+.fas-wifi-1 {
+    position: absolute;
+    top: 3px;
+    left: 8px;
+}
+.btn-heart.active2 {
+    display: none;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    top: 125px;
+    right: 0px;
+    height: 62px;
+    background-color: red;
+    color: #fff;
+    font-size: .9rem;
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding-right: 15px;
+}
+.fa-share-square-1 {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+}
+.btn-heart.active3{
+    display: none;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    top: 230px;
+    right: 0px;
+    height: 62px;
+    background-color: red;
+    color: #fff;
+    font-size: .9rem;
+    width: 230px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding-right: 15px;
+}
+.fa-calendar-alt-1 {
+    position: absolute;
+    top: 18px;
+    left: 15px;
 }
