@@ -754,6 +754,9 @@ button.nba-btn {
     .btn {
         margin-bottom: 30px;
     }
+    .wrapper-header-right {
+        display: none;
+    }
     .navigation-left {
         display: none;
     }
@@ -921,7 +924,6 @@ button.nba-btn {
     .btn8-4 {
         width: 120px; 
     }
-
 }
 @media(max-width: 375px) {
     body {
