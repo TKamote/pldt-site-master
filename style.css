@@ -83,6 +83,9 @@ body {
     height: 100%;
     padding-right: 10px;
 }
+.hamburger {
+    display: none;
+}
 .covid {
     display: flex;
     flex-direction: row;
@@ -112,7 +115,11 @@ body {
     justify-content: center;
     align-content: center;
     width: 100%;
-    height: 140px;
+    min-height: 200px;
+}
+.section-1-title h2 {
+    width: 85%;
+    margin: 0 auto;
 }
 .section-1-title h2 i.fa-heart {
     transform: rotateZ(25deg);
@@ -341,9 +348,14 @@ h2.fiber {
 .btn4.active a {
     color: #fff;
 }
+.section-5 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 .nba-league {
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     background-image: url(images/nba-league-pass.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -357,11 +369,13 @@ h2.fiber {
     justify-items: center;
     text-align: center;
     max-width: 350px;
-    height: 610px;
+    min-height: 610px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    transform: translate(15%, 5%);
+    position: absolute;
+    top: 35px;
+    left: 25px;
 }
 .nba_league_pass img {
     width: 100%;
@@ -380,7 +394,7 @@ button.nba-btn {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 120px;
+    min-height: 120px;
 }
 .section-7 {
     display: flex;
@@ -533,6 +547,7 @@ button.nba-btn {
     display: flex;
     font-weight: 400;
     padding-bottom: 5px;
+    margin: 0 auto;
 }
 .btn9 {
     display: flex;
@@ -574,7 +589,7 @@ button.nba-btn {
     padding-left: 40px;
     background-color: rgb(245, 238, 236);
     border-radius: 0px;
-    box-shadow:  -10px -80px 24px rgb(245, 238, 236);
+    box-shadow:  -10px -10px 24px rgb(245, 238, 236);
 }
 .section-10-right h2 {
     font-size: 2.3rem;
@@ -602,7 +617,7 @@ button.nba-btn {
     flex-wrap: wrap;
     background-color: rgb(49, 46, 46);
     width: 100%;
-    height: 120px;
+    min-height: 120px;
     padding: 20px 100px;
     margin: 0 auto;
 }
@@ -622,18 +637,6 @@ button.nba-btn {
     justify-content: right;
     color: rgb(227, 241, 241);
 }
-/* .fa-facebook {
-    color: rgba(22, 148, 245, 0.934);
-}
-.fa-twitter {
-    color: rgba(72, 218, 235, 0.934);
-}
-.fa-instagram {
-    color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);;
-}
-.fa-youtube-square {
-    color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);;
-} */
 .pldt-copyright {
     color: #fff;
     font-size: .8rem;
@@ -650,7 +653,6 @@ button.nba-btn {
     top: 300px;
     right: 10px;
 }
-
 .big-heart {
     font-size: 70px;
     position: relative;
@@ -723,7 +725,7 @@ button.nba-btn {
     top: 18px;
     left: 15px;
 }
-.btn-heart.active3{
+.btn-heart.active3 {
     display: none;
     justify-content: end;
     align-items: center;
@@ -744,4 +746,186 @@ button.nba-btn {
     position: absolute;
     top: 18px;
     left: 15px;
+}
+@media(max-width: 960px) {
+    .fixed-header {
+        position: relative;
+    }
+    .btn {
+        margin-bottom: 30px;
+    }
+    .navigation-left {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        font-size: 1.3rem;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    .section-11 {
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-anchor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media-pldt {   
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section-9-main-1 {
+        padding: 30px 8px;
+    }
+}
+@media(max-width: 768px) {
+    .section-1-title h2 {
+        width: 95%;
+    }
+    .section-1-main {
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .section-1-left {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .section-1-right {
+        width: 100%;
+    }
+    .section-1-btn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-2 {
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+        margin: 0 auto;  
+       
+    }
+    .section-2-left {
+        width: 100%;
+        
+    }
+    .section-2-right {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;  
+    }
+    .section-2-btn-up {
+        flex-direction: column;
+        margin: 0 auto; 
+        padding: 0;
+    }
+    .section-3 {
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .section-3-left {
+        width: 100%;
+    }
+    .section-3-right {
+        width: 100%;
+    }
+    .wrapper {
+        width: 370px;
+        height: 40px;
+    }
+    .btn4 {
+        padding: 10px 5px;
+        font-size: .85rem;
+        font-weight: 300; 
+        margin: 2px; 
+        width: 120px; 
+    }
+    .section-5 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nba-league {
+        min-height: 500px;
+    }
+    .nba_league_pass {
+        max-width: 100%;
+        min-height: 410px;
+        background-color: white;
+        padding: 50px;
+        border-radius: 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .nba_league_pass img {
+        max-width: 40%;
+        padding-bottom: 30px;
+        margin: 0 auto;
+    }
+    button.nba-btn {
+        margin-bottom: 0px;
+    }
+    .section-9-title {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .section-9-main {
+        flex-direction: column;
+    }
+    .section-9-main-1 {
+        width: 80%;
+        padding: 0px;
+        height: 340px;
+    }
+    .section-10 { 
+        flex-direction: column-reverse;
+    }
+    .section-10-left {
+        width: 100%;
+    }
+    .section-10-right {
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .section-10-right h2 {
+        text-align: center;
+    }
+    .section-8-btn {
+        border-radius: 25px;
+        width: 370px;
+        height: 40px;
+    }
+    .btn8 {
+        padding: 9px 5px;
+        font-size: .8rem;
+        font-weight: 300; 
+        margin: 1px; 
+        width: 85px; 
+    }
+    .btn8-4 {
+        width: 120px; 
+    }
+
+}
+@media(max-width: 375px) {
+    body {
+        background-color: rgb(245, 250, 240);
+    }
+    
 }
