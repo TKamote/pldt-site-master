@@ -481,6 +481,13 @@ button.nba-btn {
 .section-8-1a img {
     width: 100%;
 }
+.section-8-1a img.nono {
+    border-radius: 10px;
+}
+.section-8-1a a span {
+    color: chocolate;
+    font-size: .55rem;
+}
 .section-8-1a img:hover {
     width: 105%;
 }
