@@ -382,7 +382,7 @@ h2.fiber {
     padding-bottom: 30px;
 }
 button.nba-btn {
-    width: 150px;
+    width: 190px;
     background-color: red;
     color: #fff;
     margin: 0 auto;
@@ -481,6 +481,13 @@ button.nba-btn {
 .section-8-1a img {
     width: 100%;
 }
+.section-8-1a img:hover {
+    width: 105%;
+}
+.section-8-1a:hover {
+    width: 280px;
+}
+
 .section-8-1a a {
     width: 80%;
     text-decoration: none;
@@ -635,7 +642,7 @@ button.nba-btn {
 .social-media-pldt {
     display: flex;
     flex-wrap: unwrap;
-    justify-content: right;
+    align-self: flex-end;
     color: rgb(227, 241, 241);
 }
 .pldt-copyright {
@@ -748,6 +755,9 @@ button.nba-btn {
     top: 18px;
     left: 15px;
 }
+.heart-row {
+    display: none;
+}
 @media(max-width: 960px) {
     .fixed-header {
         position: relative;
@@ -785,6 +795,12 @@ button.nba-btn {
     }
     .section-9-main-1 {
         padding: 30px 8px;
+    }
+    .social-media-pldt {
+    align-self: center;
+	}
+    .heart-row {
+        display: none;
     }
 }
 @media(max-width: 768px) {
@@ -841,8 +857,7 @@ button.nba-btn {
         flex-direction: column;
         align-content: center;
         justify-items: center;
-        margin: 0 auto;  
-       
+        margin: 0 auto;   
     }
     .section-2-left {
         width: 100%;
@@ -900,7 +915,7 @@ button.nba-btn {
         left: 0px;
     }
     .nba_league_pass img {
-        max-width: 50%;
+        max-width: 70%;
         padding-bottom: 30px;
         margin: 0 auto;
     }
@@ -966,7 +981,6 @@ button.nba-btn {
     .heart {
         display: none;
     }
-
     .heart-row {
 		display: flex;
       	justify-content: space-between;
@@ -976,13 +990,12 @@ button.nba-btn {
       	padding: 0 15px;
       	position: fixed;
       	bottom: 0;
-        background: linear-gradient(0deg, #ddd, #dfdfdf 40%, #fff);
+        background: linear-gradient(transparent 30%, #fff);
         opacity: .7;
       }
       .heart-wrapper {
       	display: flex;
       	flex-direction: row;
-
       }
       .heart-wrapper a {
       	display: flex;
@@ -991,45 +1004,46 @@ button.nba-btn {
       	text-decoration: none;
       }
       .fas {
-      	font-size: 40px;
+      	font-size: 50px;
       	position: relative;
       	color: red;
       }
       .fa-wifi {
-      	font-size: 18px;
+      	font-size: 22px;
       	position: absolute;
-      	top: 10px;
-      	left: 9px;
+      	top: 13px;
+      	left: 12px;
       	color: #fff;
       }
        .fa-share-square {
-      	font-size: 18px;
+      	font-size: 22px;
       	position: absolute;
-      	top: 28px;
-      	left: 16px;
+      	top: 31px;
+      	left: 18px;
       	color: #fff;
       }
        .fa-calendar-alt {
-      	font-size: 18px;
+      	font-size: 22px;
       	position: absolute;
-      	top: 28px;
-      	left: 16px;
+      	top: 31px;
+      	left: 19px;
       	color: #fff;
       }
       button {
       	border: none;
       	outline: none;
-      	font-size: .65rem;
-      	background: transparent;
+      	font-size: .60rem;
+        background-color: transparent;
       }
       .section-11 {
-        margin-bottom: 80px;
+        background-color: rgb(49, 46, 46);
+        padding-bottom: 40px;
+        padding: 20px 10px 80px 10px;
     }
 }
 @media(max-width: 375px) {
     body {
-        background-color: rgb(245, 250, 240);
-       
+        background-color: rgb(245, 250, 240); 
     }
     .fixed-header {
         padding: 12px 10px 12px 10px; 
@@ -1074,6 +1088,5 @@ button.nba-btn {
     }
     .section-10-right {
         padding: 10px;
-    }
-    
+    }  
 }
